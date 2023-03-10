@@ -56,11 +56,89 @@
             </li>
           </ul>
         </address>
-        <button class="menu-gamburger" type="button">
+        <button class="button-menu-gamburger js-open-menu" type="button">
           <svg class="icon-gamburger">
             <use href="./images/sprite.svg#menu-hamburger"></use>
           </svg>
         </button>
+      </div>
+      <div class="menu-mobile js-menu-container">
+        <div class="container">
+          <button
+            class="button-close js-close-menu"
+            type="button"
+            data-modal-close
+          >
+            <svg class="close-icon" width="8" height="8">
+              <use href="./images/sprite.svg#close-cross"></use>
+            </svg>
+          </button>
+          <nav class="menu-mobile-nav">
+            <ul class="nav-list-mobile list">
+              <li class="nav-item-mobile">
+                <a class="nav-link-mobile link current" href="./index.html"
+                  >Studio</a
+                >
+              </li>
+              <li class="nav-item-mobile">
+                <a class="nav-link-mobile link" href="./portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="nav-item-mobile">
+                <a class="nav-link-mobile link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="address-mobile">
+            <ul class="address-list-mobile list">
+              <li class="address-item-mobile">
+                <a
+                  class="address-link-mobile link phone"
+                  href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="address-item-mobile">
+                <a
+                  class="address-link-mobile link email"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="social-list list">
+              <li class="social-item">
+                <a href="" class="social-link">
+                  <svg class="social-icon">
+                    <use href="./images/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="" class="social-link">
+                  <svg class="social-icon">
+                    <use href="./images/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="" class="social-link">
+                  <svg class="social-icon">
+                    <use href="./images/sprite.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="" class="social-link">
+                  <svg class="social-icon">
+                    <use href="./images/sprite.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
       </div>
     </header>
 
@@ -465,8 +543,8 @@
     <!-- Modal window -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal-close" type="button" data-modal-close>
-          <svg class="modal-close-icon" width="8" height="8">
+        <button class="button-close" type="button" data-modal-close>
+          <svg class="close-icon" width="8" height="8">
             <use href="./images/sprite.svg#close-cross"></use>
           </svg>
         </button>
@@ -531,5 +609,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
