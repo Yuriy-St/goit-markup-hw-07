@@ -909,12 +909,26 @@ address {
 
 .customers-list {
   display: flex;
-  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 72px 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .customers-list {
+    gap: 72px 24px;
+  }
 }
 
 .customer-item {
-  width: 168px;
+  width: 190px;
   height: 88px;
+}
+
+@media screen and (min-width: 768px) {
+  .customer-item {
+    width: 168px;
+  }
 }
 
 .customer-link {
