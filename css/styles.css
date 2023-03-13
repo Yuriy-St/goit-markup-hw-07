@@ -917,8 +917,14 @@ address {
 }
 
 .customer-item {
-  width: 190px;
+  width: 130px;
   height: 88px;
+}
+
+@media screen and (min-width: 428px) {
+  .customer-item {
+    width: 190px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1033,8 +1039,14 @@ address {
 .card-img-wrap {
   position: relative;
   overflow: hidden;
-  width: 396px;
-  height: 280px;
+  width: 100%;
+}
+
+@media screen and (min-width: 428px) {
+  .card-img-wrap {
+    width: 396px;
+    height: 280px;
+  }
 }
 
 @media screen and (min-width: 768px) {
