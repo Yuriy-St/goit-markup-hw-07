@@ -64,11 +64,7 @@
       </div>
       <div class="menu-mobile js-menu-container">
         <div class="container">
-          <button
-            class="button-close js-close-menu"
-            type="button"
-            data-modal-close
-          >
+          <button class="button-close js-close-menu" type="button">
             <svg class="close-icon" width="8" height="8">
               <use href="./images/sprite.svg#close-cross"></use>
             </svg>
@@ -144,7 +140,7 @@
 
     <main>
       <!-- Hero -->
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container">
           <h1 class="hero-title text-centered">
             Effective Solutions for Your Business
@@ -157,7 +153,7 @@
             Order Service
           </button>
         </div>
-      </section> -->
+      </section>
 
       <!-- Our benefits -->
       <!-- <section class="benefits section">
@@ -594,12 +590,14 @@
             name="accept-policy"
           />
           <label class="form-user-policy-label" for="user-policy">
-            <span class="user-policy-chk-fake">
-              <svg class="icon-chk" width="10" height="7">
-                <use href="./images/sprite.svg#check"></use>
-              </svg>
-            </span>
-            I accept the terms and conditions of the&nbsp;
+            <div class="policy-chk-container">
+              <span class="user-policy-chk-fake">
+                <svg class="icon-chk" width="10" height="7">
+                  <use href="./images/sprite.svg#check"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the&nbsp;
+            </div>
             <a href="#">Privacy Policy</a>
           </label>
           <button class="form-order-send-btn button-brand" type="submit">
@@ -608,6 +606,13 @@
         </form>
       </div>
     </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>
