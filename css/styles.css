@@ -837,13 +837,20 @@ address {
 
 /* #region Illustrations*/
 .illustrations {
-  padding-bottom: 120px;
+  display: none;
 }
 
-.illustrations-list {
-  display: flex;
-  align-items: center;
-  gap: 24px;
+@media screen and (min-width: 1200px) {
+  .illustrations {
+    display: flex;
+    padding-top: 0;
+  }
+
+  .illustrations-list {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
 }
 
 /* #endregion */
