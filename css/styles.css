@@ -368,6 +368,7 @@ address {
 /* #region Mobile menu */
 .menu-mobile {
   display: none;
+  z-index: 100;
 }
 /* #endregion */
 
