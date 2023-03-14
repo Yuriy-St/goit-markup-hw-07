@@ -981,6 +981,12 @@ address {
   margin-bottom: 48px;
 }
 
+@media screen and (min-width: 768px) {
+  .filter-list {
+    justify-content: center;
+  }
+}
+
 .filter-button {
   font-weight: 500;
   color: var(--color-primary-brand);
